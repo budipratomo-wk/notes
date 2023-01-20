@@ -8,6 +8,7 @@ date:  2023-01-09
 - [ ]Link the references to the docs here 
 
 # Relevant repositories 
+- [ Google Doc Note ](https://docs.google.com/document/d/1e5bk9rBx_EWGTUAyJZOlG5ebQmpt-VriVK-4LQsYszY/edit#heading=h.xgmht5uz0vmg)
 - xbrl-translator
 - skaardb 
 - wTranslate
@@ -36,3 +37,4 @@ The XML is freeform akin to HTML.
 
 # PRs
 [[ TRANS-13814 ]]
+[[ German XML - Feature Brief review]]

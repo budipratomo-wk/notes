@@ -12,6 +12,8 @@ perspective.
 Therefore, I'm making it my goal thi year to read through on what it is, and 
 present my learnings to my teammates.
 
+Also reach out to Brett Kail
+
 
 # Why this goal 
 # How to measure it?

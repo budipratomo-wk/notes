@@ -37,9 +37,15 @@ markdown file accessible in this github repo: [bpratomo-notes](https://github.co
 Comparing the amount of notes with the amount of PR I put in seems reasonable enough. 
 Therefore I'm aiming at the ration of 1:1. 1 new note for 1 PR. 
 
+After discussion, we'll revise this to 10 notes this year. 
+
 
 # When do we know it is successful?
 We know if it's successful, if the I achieved the following criteria: 
 - I made it a habit to document stuff (1:1 note ratio)
 - The notes are actually helpful, I can attach every note to the PR I'm building
 and it should clear up the topic, instead of making it more confusing
+
+The notes have been reused at least 3 times in the year, either by myself or to 
+help others solve their problems
+
