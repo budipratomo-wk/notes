@@ -22,15 +22,7 @@ Future<void> _onCreateProfile([_]) async {
     final minimumCreateTime = Future.delayed(_minimumModifyDuration);
 
     final payload = CreateReportPayload(
-      _name,
-      _taxonomy,
-      _companyId,
-      _registrarUrl,
-      _taxonomy.configuration.supportsExtensionTaxonomies ? _prefix : null,
-      _taxonomy.configuration.supportsExtensionTaxonomies ? _namespace : null,
-      _calendarId,
-      _periodId,
-      filingVariant: _filingVariantName,
+    {omitted for clarity}
     );
 
     final createAction = _actions.createReport(payload);
@@ -45,6 +37,7 @@ Future<void> _onCreateProfile([_]) async {
       trigger();
     }
   }
+
   Future _onCreateReport(CreateReportPayload payload) async {
     if (_inProgressReportsByHash.containsKey(payload.label) ||
         _reportsByLabel.containsKey(payload.label)) {
@@ -58,17 +51,8 @@ Future<void> _onCreateProfile([_]) async {
 
     logger.fine('_onCreateReport - creating report');
     var newReport = await createReport(
-        _xbrlDataApi,
-        payload.label,
-        payload.taxonomy.name,
-        payload.companyId,
-        payload.registrarUrl,
-        payload.xbrlPrefix,
-        payload.xbrlNamespaceUri,
-        payload.filingVariant,
-        payload.calendarId,
-        payload.periodId,
-        _orderedDocumentId);
+    {omitted for clarity}
+  );
 
     if (newReport == null) {
       logger.severe(ContextualMessage('Failed to create report', context: {
