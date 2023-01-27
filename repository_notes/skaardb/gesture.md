@@ -26,20 +26,20 @@ graph TD
 
 -------------------------------------------------------------------------------
 
-The gestures and operations come together in framework.go. Take a look at the 
-[ ApplyGestures](#applygestures) function. 
+The gestures and operations come together in framework.go. 
 
 You can see that these are the steps:
 1. Gestures enters the [ ProcessGestures ](#processgestures) function that will:
     1. Try to process everything into cache, simulating if all can be processed
     2. If everything goes smoothly, changes will actually be commited, using
        the cache as reference
-2. Within the processing, gestures get decomposed via their respective [GetDecomposers](#getdecomposers) method
-3. Once fully decomposed, we call [ operation.ApplyDecomposer ](#applydecomposers)
-4. Which will retrieve the necessary context and call [ ApplyBaseOps ](#applybaseops)
-5. This will call the operation's validate and apply methods. [ Example ](#example-operation).
-6. Which will call the corresponding method in its context. In this case, [ documentMetadata ](#example-index)
-7. This will update the cache, as stated in item number 1 and will be committed
+2. Within the processing, gestures are applied via [ApplyGestures](#applygestures) after initializing & validating access 
+3. Within the application, gestures get decomposed via their respective [GetDecomposers](#getdecomposers) method
+4. Once fully decomposed, we call [ operation.ApplyDecomposer ](#applydecomposers)
+5. Which will retrieve the necessary context and call [ ApplyBaseOps ](#applybaseops)
+6. This will call the operation's validate and apply methods. [ Example ](#example-operation).
+7. Which will call the corresponding method in its context. In this case, [ documentMetadata ](#example-index)
+8. This will update the cache, as stated in item number 1 and will be committed
 once all operations are confirmed to be executable successfully
 
 -------------------------------------------------------------------------------
