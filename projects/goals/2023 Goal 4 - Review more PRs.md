@@ -2,6 +2,7 @@
 title: 2023 Goal 4 - Review more PRs
 date:  2023-01-18
 ---
+#goals
 # Summary of the goal
 
 I want to contribute to higher quality code base. What better way to realize that

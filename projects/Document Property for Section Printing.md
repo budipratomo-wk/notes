@@ -1,7 +1,8 @@
 ---
-title: projects/google permission project
+title: projects/Document Property for Section Printing
 date:  2023-01-19
 ---
+#projects
 
 Tip: afterwards, formally ask them for feedback!
 use this as a promotion opportunity!
